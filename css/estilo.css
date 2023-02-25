@@ -497,6 +497,24 @@ textarea {max-width: 100%}
     margin-right: 10%;
 }
 
+.maindiv__atomicage {
+    margin-top: 180px;
+    padding-right: 10%;
+}
+
+.maindiv__img__atomicage {
+    width: 236.5px;
+    height: 32px;
+}
+
+.main2div__atomicage {
+    margin-top: 80px;
+}
+
+.sectiondiv__img__yudai {
+    position: relative; top: 6%;
+}
+
 @media (max-width:600px) {
     .main__estelleythild__h1 { 
         font-size: 3rem;
