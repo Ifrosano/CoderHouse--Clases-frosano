@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Bienvenido a mi portfolio online. Soy Florencia Rosano, Diseñadora Gráfica, UX UI & Desarrolladora web. Vení a conocer un poco de mi">
     <title>Ros Design</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
@@ -15,8 +19,8 @@
 
     <!-- COMIENZA ENCABEZADO -->
 
-    <header class="header container">
-        <nav class="header__nav navbar navbar-expand-lg">
+    <header class="animate__animated animate__fadeInDown header fixed-top">
+        <nav class="header__nav navbar navbar-expand-lg container">
             <div class="container-fluid">
                 <a href="index.html"> <img class="header__logo" src="img/logo porfolio.png"
                         alt="Logo porfolio Florencia"> </a>
@@ -27,31 +31,34 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="mx-auto header__menu navbar-nav">
                         <li class="nav-item">
-                            <a class="header__conoceme nav-link active" aria-current="page" href="#">Conoceme</a>
+                            <a class="header__conoceme nav-link active" aria-current="page"
+                                href="#Sec-conoceme">Conoceme</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="menú/proyectos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> PROYECTOS
+                            <a class="nav-link" href="#Sec-proyectos" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"> PROYECTOS
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="sub menú/conectados.html">Conectados</a></li>
-                              <li><a class="dropdown-item" href="sub menú/plurxl.html">Plurxl</a></li>
-                              <li><a class="dropdown-item" href="sub menú/campus.html">Campus</a></li>
-                              <li><a class="dropdown-item" href="sub menú/estelleythild.html">Estelle & Thild</a></li>
-                              <li><a class="dropdown-item" href="sub menú/yudai.html">Yudai</a></li>
-                              <li><a class="dropdown-item" href="sub menú/atomicage.html">Atomic Age</a></li>
+                                <li><a class="dropdown-item" href="menu/conectados.html">Conectados</a></li>
+                                <li><a class="dropdown-item" href="menu/plurxl.html">Plurxl</a></li>
+                                <li><a class="dropdown-item" href="menu/campus.html">Campus</a></li>
+                                <li><a class="dropdown-item" href="menu/estelleythild.html">Estelle & Thild</a>
+                                </li>
+                                <li><a class="dropdown-item" href="menu/yudai.html">Yudai</a></li>
+                                <li><a class="dropdown-item" href="menu/atomicage.html">Atomic Age</a></li>
                             </ul>
-                          </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="menú/valores.html">Valores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="menú/contacto.html">Contacto</a>
+                            <a class="nav-link" href="#Sec-valores">Valores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Sec-contacto">Contacto</a>
                         </li>
                     </ul>
                     <div class="header__derecha ms-auto">
-                        <img class="header__logoinstagram img-fluid" src="img/logo instagram.png"
+                        <img class="header__logoinstagram img-fluid" src="img/logo instagram.png "
                             alt="Logo de instagram">
-                        <a href=></a><button class="header__button">ES</button>
+                        <button class="header__button">ES</button>
                     </div>
                 </div>
             </div>
@@ -63,11 +70,12 @@
 
     <!-- COMIENZA CONOCEME -->
 
-    <main class="main__index container">
+    <main class="main__index container" id="Sec-conoceme">
         <div>
-            <h1 class="main__titulo text-center mb-5"> Nuestro punto de encuentro. </h1>
+            <h1 class="animate__animated animate__fadeInUp main__titulo text-center mb-5"> Nuestro punto de encuentro.
+            </h1>
         </div>
-        <div class="main__presentacion row">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="main__presentacion row">
             <div class="col-xl-6">
                 <h2 class="main__presentacion__h2 mb-3">¡Hola! Soy Florencia Rosano</h2>
                 <p class="main__presentacion__p">
@@ -84,16 +92,18 @@
                     que me
                     especialicé en el diseño pensado en el usuario & actualmente me encuentro estudiando desarrollo web.
                 </p>
-                <a class="main__button" href="sub menú/quiensoy.html">VER MÁS</a>
+                <a class="button__mixin" href="menu/quiensoy.html">VER MÁS</a>
             </div>
             <div class="col-xl-6 main__img">
-                <img class="main__img img-fluid" src="img/imagen conoceme.png" alt="imagen lateral, conoceme">
+                <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" class=" main__img img-fluid"
+                    src="img/imagenconoceme.png" alt="imagen lateral, conoceme">
             </div>
         </div>
     </main>
 
     <div class="div__conoceme row">
-        <div class="col-xl-4 text-center div__conoceme__texto">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+            class="col-xl-4 text-center div__conoceme__texto">
             <img class="img-fluid div__img__conoceme mb-4" src="img/conoceme_div1.png"
                 alt="Imagen encima de Diseño Gráfico">
             <h2 class="mb-5">Diseño Gráfico</h2>
@@ -102,7 +112,8 @@
                 flyers, catálogos, brochures, packaging.
             </p>
         </div>
-        <div class="col-xl-4 text-center div__conoceme__texto">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+            class="col-xl-4 text-center div__conoceme__texto">
             <img class="img-fluid div__img__conoceme mb-4" src="img/conoceme_div2.png" alt="Imagen encima de UX UI">
             <h2 class="mb-5">UX UI</h2>
             <p class="div__conoceme__p">
@@ -110,7 +121,8 @@
                 de usuario, wireframes y prototipos.
             </p>
         </div>
-        <div class="col-xl-4 text-center div__conoceme__texto">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+            class="col-xl-4 text-center div__conoceme__texto">
             <img class="img-fluid div__img__conoceme mb-4 " src="img/conoceme_div3.png"
                 alt="Imagen encima de Desarrollo Full Stack">
             <h2 class="mb-5">Desarrollo Full Stack</h2>
@@ -126,34 +138,56 @@
 
     <!-- COMIENZA PROYECTOS -->
 
-    <section class="section__index container">
+    <section data-aos="fade-up" class="section__index container" id="Sec-proyectos">
         <h2 class="section__h2 mb-5">PROYECTOS</h2>
         <div class="div__section row">
             <div class="col-xl-6">
-                <a href="sub menú/conectados.html">
-                    <img class="img-fluid mb-4" src="img/imagen conectados.png" alt="imagen a proyecto conectados">
+                <a href="menu/conectados.html">
+                    <img class="img-fluid mb-4" src="img/imagenconectados.png" alt="imagen a proyecto conectados">
                 </a>
             </div>
             <div class="col-xl-6">
-                <a href="sub menú/plurxl.html">
-                    <img class="img-fluid mb-4" src="img/imagen plural.png" alt="imagen a proyecto plurxl">
+                <a href="menu/plurxl.html">
+                    <img class="img-fluid mb-4" src="img/imagenplural.png" alt="imagen a proyecto plurxl">
                 </a>
             </div>
             <div class="col-xl-6">
-                <a href="sub menú/campus.html">
-                <img class="img-fluid mb-4" src="img/imagen campus.png" alt="imagen a proyecto campus">
+                <a href="menu/campus.html">
+                    <img class="img-fluid mb-4" src="img/imagencampus.png" alt="imagen a proyecto campus">
                 </a>
             </div>
             <div class="col-xl-6">
-                <a href="sub menú/estelleythild.html">
-                    <img class="img-fluid mb-4" src="img/imagen estelle y thild.png"
+                <a href="menu/estelleythild.html">
+                    <img class="img-fluid mb-4" src="img/imagenestelleythild.png"
                         alt="imagen a proyecto estelle & thild">
                 </a>
             </div>
         </div>
         <div class="sectiondiv__button">
-            <a href=""></a> <button class="section__button">VER MÁS</button>
+            <button class="btn btn-primary button__mixin" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                VER MÁS
+            </button>
         </div>
+        </p>
+        <div class="collapse row " id="collapseExample">
+            <div class="col-xl-6">
+                <a href="menu/atomicage.html">
+                    <img class="img-fluid mb-4" src="img/imagenatomic.png" alt="imagen a proyecto atomic">
+                </a>
+            </div>
+            <div class="col-xl-6">
+                <a href="menu/yudai.html">
+                    <img class="img-fluid mb-4" src="img/imagenyudai.png"
+                        alt="imagen a proyecto yudai">
+                </a>
+            </div>
+        </div>
+
+
+        <!-- <div class="sectiondiv__button">
+            <a href=""></a> <button class="section__button">VER MÁS</button>
+        </div> -->
     </section>
 
     <!-- FIN PROYECTOS -->
@@ -161,16 +195,16 @@
 
     <!-- COMIENZA VALORES -->
 
-    <div class="div__valores row">
-        <div class="col-xl-6">
-            <img class="div__valores__vector img-fluid" src="img/vector valores.png" alt="vector valores">
+    <div class="div__valores row" id="Sec-valores">
+        <div data-aos="fade-up" class="col-xl-6">
+            <img class="div__valores__vector img-fluid" src="img/vectorvalores.png" alt="vector valores">
             <p class="div__valores__p">
                 La pasión es el principal motivador para hacer lo que elegí, aprender en todo momento y continuar
                 haciendo nuevos proyectos.
             </p>
         </div>
         <div class="col-xl-6">
-            <img class="img-fluid" src="img/imagen valores.png" alt="imagen lateral valores">
+            <img data-aos="fade-up" class="img-fluid" src="img/imagenvalores.png" alt="imagen lateral valores">
         </div>
     </div>
 
@@ -179,20 +213,29 @@
 
     <!-- COMIENZA CONTACTO -->
 
-    <section class="section__contacto container">
+    <section class="section__contacto container" id="Sec-contacto" data-aos="fade-up">
         <div class="row">
             <div class="section__contacto__mensaje col-xl-6">
                 <h2 class="section__contacto__h2 mb-3"> HEY! CONTACTAME </h2>
                 <p class="section__contacto__p mb-5"> Dime lo que necesites por aquí o envíame un mail. </p>
-                <div>
-                    <textarea class="section__form mb-3" name="" id="" cols="33" rows="1"
-                        placeholder="Nombre"></textarea>
-                    <textarea class="section__form mb-3" name="" id="" cols="33" rows="1"
-                        placeholder="Email"></textarea>
-                    <textarea class="section__form mb-2" name="" id="" cols="70" rows="4"
-                        placeholder="Mensaje"></textarea>
+                <div class="section__div__form">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control section__form" placeholder="Nombre"
+                                aria-label="Nombre">
+                        </div>
+                        <div class="col mb-3">
+                            <input type="text" class="form-control section__form" placeholder="Email"
+                                aria-label="Email">
+                        </div>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control mb-3 section__form" placeholder="Dejame un comentario"
+                            id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Mensaje</label>
+                    </div>
                 </div>
-                <a href=""></a> <button class="section__button__contacto mb-5">ENVIAR</button>
+                <button class="button__mixin mb-5" type="submit">ENVIAR</button>
             </div>
             <div class="div__contacto__2 col-xl-6">
                 <div class="row">
@@ -205,7 +248,7 @@
                                 src="img/mail_contacto.png" alt="logo mail contacto"> florenciarosano97@gmail.com</h3>
                     </div>
                 </div>
-                <img class="img-fluid" src="img/imagen contacto.png" alt="imagen lateral contacto">
+                <img class="img-fluid" src="img/imagencontacto.png" alt="imagen lateral contacto">
             </div>
         </div>
     </section>
@@ -225,18 +268,26 @@
                 <h4 class="div__footer__h4 text-center"> <img class="img-fluid section__div__logo"
                         src="img/mail_contacto.png" alt="logo mail contacto">florenciarosano97@gmail.com</h4>
             </div>
-            <div class="col-xl-3">
+            <div class="col-xl-3 animate__animated animate__slideInUp">
                 <img class="footer__logoinstagram img-fluid" src="img/logo instagram.png" alt="Logo de instagram">
-                <a href=></a><button class="footer__button mb-5">ES</button>
+                <button class="footer__button mb-5">ES</button>
             </div>
         </div>
-        <p class="footer__index__p1 text-center">“Gracias por visitar mi Portfolio web espero les haya gustado y hayan
-            podido conocer un poquito más de mi”</p>
-        <p class="footer__index__p2 text-center">@2023 FR diseño gráfico | Todos los derechos resevados</p>
+
+        <div class="container">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3"></ul>
+                <p class="text-center text-muted">© 2023 FR | Todos los derechos resevados</p>
+            </footer>
+        </div>
     </footer>
 
     <!-- FIN PIE DE PÁGINA -->
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>

@@ -1,0 +1,21 @@
+/* MIXIN */
+
+@mixin boton {
+    border: 1px #F9BE15 solid;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: $color_1;
+    text-decoration: none;
+    background-color: $background-color_1;
+    border-radius: 0%;
+
+    &:hover {
+        background-color: $background-color_2;
+        color: $color_5;
+    }
+}
+
+.button__mixin {
+    @include boton;
+}

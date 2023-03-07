@@ -1,529 +1,522 @@
-/* ENCABEZADO */
-
+@charset "UTF-8";
 body {
-    background-color: #F7F5F5;
-    font-family: 'Poppins', sans-serif;
-    color: #1E1E1E;
+  background-color: #F7F5F5;
+  font-family: "Poppins", sans-serif;
+  color: #1E1E1E;
+  overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* ENCABEZADO */
 .header__logo {
-    width: 103px;
-    height: 70px;
-    cursor: pointer;
-    position: relative;
-    right: 10px;
+  width: 103px;
+  height: 70px;
+  cursor: pointer;
+  position: relative;
+  right: 10px;
 }
 
-.header__menu,
+.header__menu {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #1E1E1E;
+  font-weight: 800;
+  list-style-type: none;
+  font-size: 14px;
+  padding: 0px 20px;
+  position: relative;
+  left: 20px;
+}
+
 li {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #1E1E1E;
-    font-weight: 800;
-    list-style-type: none;
-    font-size: 14px;
-    padding: 0px 20px;
-    position: relative;
-    left: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #1E1E1E;
+  font-weight: 800;
+  list-style-type: none;
+  font-size: 14px;
+  padding: 0px 20px;
+  position: relative;
+  left: 20px;
 }
 
-.header__conoceme,
-.header__contacto,
-.header__proyectos,
+.header__conoceme {
+  border-bottom: 3px #1E1E1E solid;
+}
+
+.header__contacto {
+  border-bottom: 3px #1E1E1E solid;
+}
+
+.header__proyectos {
+  border-bottom: 3px #1E1E1E solid;
+}
+
 .header__valores {
-    border-bottom: 3px #1E1E1E solid;
+  border-bottom: 3px #1E1E1E solid;
 }
 
 .header__logoinstagram {
-    width: 24px;
-    height: 24px;
-    position: relative;
-    bottom: 3px;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  bottom: 3px;
 }
 
 .header__button {
-    color: #1E1E1E;
-    background-color: #F7F5F5;
-    border: none;
-    font-weight: 800;
-    cursor: pointer;
-    font-size: 20px;
+  color: #1E1E1E;
+  background-color: #F7F5F5;
+  border: none;
+  font-weight: 800;
+  cursor: pointer;
+  font-size: 20px;
 }
-
 .header__button:hover {
-    color: #089269;
+  color: #089269;
 }
 
 .dropdown-menu {
-    background-color: #F7F5F5;
-    border: none;
+  background-color: #F7F5F5;
+  border: none;
 }
 
 .dropdown-item {
-    font-size: 14px;
-    color: #B6A99C;
-    font-weight: 500;
-    position: relative; right: 20%;
+  font-size: 14px;
+  color: #B6A99C;
+  font-weight: 500;
+  position: relative;
+  right: 20%;
+}
+.dropdown-item:hover {
+  background-color: #F9BE15;
+  color: #F7F5F5;
 }
 
-@media (max-width:990px) {
-    .header__derecha {
-        position: relative; left: 80px;
-    }
+.fixed-top {
+  top: 0px;
+  background-color: #F7F5F5;
 }
+
+/*box-shadow: 0px 0px 5px  #B6A99C;
 
 /* FIN DE ENCABEZADO */
-
-
 /* COMIENZA CONOCEME */
-
 .main__index {
-    margin-top: 400px;
+  margin-top: 450px;
 }
 
 .main__titulo {
-    font-size: 54px;
-    font-weight: 800;
-    padding-bottom: 100px;
+  font-size: 54px;
+  font-weight: 800;
+  padding-bottom: 100px;
 }
 
 .main__presentacion__h2 {
-    font-size: 22px;
-    font-weight: 600;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 .main__presentacion__p {
-    font-size: 14px;
-    font-weight: 400;
-    color: #373F41;
-}
-
-.main__button {
-    border: 1px #F9BE15 solid;
-    padding: 5px 10px;
-    font-size: 16px;
-    font-weight: 500;
-    color: #1E1E1E;
-    text-decoration: none;
-}
-
-.main__button:hover {
-    background-color: #F9BE15;
-    color: #F7F5F5;
+  font-size: 14px;
+  font-weight: 400;
+  color: #373F41;
 }
 
 .div__conoceme {
-    margin-top: 120px;
-    border: 1px #9ACFD1 solid;
-    background-color: #9ACFD1;
-    color: #F7F5F5;
-    padding: 60px;
+  margin-top: 120px;
+  border: 1px #9ACFD1 solid;
+  background-color: #9ACFD1;
+  color: #F7F5F5;
+  padding: 60px;
 }
 
 .div__img__conoceme {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 .div__conoceme__texto {
-    padding: 40px;
+  padding: 40px;
 }
 
 .div__conoceme__p {
-    font-size: 14px;
-    font-weight: 290;
-    padding: 20px;
-}
-
-@media (max-width:1200px) {
-    .main__img {
-        padding-top: 20px;
-    }
-    .main__index {
-        text-align: center;
-    }
+  font-size: 14px;
+  font-weight: 290;
+  padding: 20px;
 }
 
 /* FIN CONOCEME */
-
-
 /* COMIENZA PROYECTOS */
-
 .section__index {
-    margin-top: 120px;
+  margin-top: 120px;
 }
 
 .section__h2 {
-    text-align: center;
-    font-weight: 800;
-}
-
-.section__button {
-    border: 1px #F9BE15 solid;
-    padding: 5px 15px;
-    font-size: 16px;
-    font-weight: 500;
-    color: #1E1E1E;
-    text-decoration: none;
-    background-color: #F7F5F5;
-}
-
-.section__button:hover {
-    background-color: #F9BE15;
-    color: #F7F5F5;
+  text-align: center;
+  font-weight: 800;
 }
 
 /* FIN PROYECTOS */
-
-
 /* COMIENZA VALORES */
-
 .div__valores {
-    background-color: #E8AE2C;
-    padding: 10%;
-    margin-top: 120px;
+  background-color: #E8AE2C;
+  padding: 10%;
+  margin-top: 120px;
 }
 
 .div__valores__vector {
-    width: 27px;
-    height: 30px;
+  width: 27px;
+  height: 30px;
 }
 
 .div__valores__p {
-    font-size: 2.2rem;
-    font-weight: 800;
-    color: #373F41;
-    padding-top: 60px;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #373F41;
+  padding-top: 60px;
 }
 
 /* FIN VALORES */
-
-
 /* COMIENZA CONTACTO */
-
 .section__contacto {
-    margin-top: 120px;
+  margin-top: 120px;
 }
 
 .section__contacto__h2 {
-    font-size: 32px;
-    font-weight: 800;
+  font-size: 32px;
+  font-weight: 800;
 }
 
 .section__contacto__p {
-    color: #373F41;
-    font-size: 14px;
-}
-
-.section__button__contacto {
-    border: 1px #F9BE15 solid;
-    padding: 5px 10px;
-    font-size: 16px;
-    font-weight: 500;
-    color: #1E1E1E;
-    text-decoration: none;
-    background-color: #F7F5F5;
-}
-
-.section__button__contacto:hover {
-    background-color: #F9BE15;
-    color: #F7F5F5;
+  color: #373F41;
+  font-size: 14px;
 }
 
 .div__contacto__h3 {
-    font-size: 14px;
-    font-weight: 600;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .section__form {
-    background-color: #F7F5F5;
-    border: 1px #373F41 solid;
-    font-size: 16px;
-    font-weight: 300;
+  background: #F7F5F5;
+  border: 1px #373F41 solid;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 0%;
 }
 
 .section__div__logo {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
-textarea {max-width: 100%}
-
-@media (max-width:600px) {
-    .section__contacto {
-        text-align: center;
-    }
-}
-
-@media (min-width:601px) and (max-width:1200px) {
-    .section__contacto {
-        text-align: center;
-    }
+textarea {
+  max-width: 100%;
 }
 
 /* FIN CONTACTO */
-
-
 /* COMIENZA FOOTER */
-
 .footer__index {
-    margin-top: 120px;
-    background-color: #E8AE2C;
-    padding: 60px;
+  margin-top: 80px;
+  padding: 60px;
 }
 
 .footer__logoinstagram {
-    width: 24px;
-    height: 24px;
-    position: relative;
-    bottom: 3px;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  bottom: 3px;
 }
 
 .footer__button {
-    color: #1E1E1E;
-    border: none;
-    font-weight: 800;
-    cursor: pointer;
-    font-size: 20px;
-    background-color: #E8AE2C;
+  color: #1E1E1E;
+  border: none;
+  font-weight: 800;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #F7F5F5;
 }
-
 .footer__button:hover {
-    color: #089269;
+  color: #089269;
 }
 
 .div__footer__h4 {
-    font-size: 14px;
-    font-weight: 600;
-    color: #1E1E1E;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1E1E1E;
 }
 
 .div__footer__h3 {
-    font-size: 24px;
-    font-weight: 800;
+  font-size: 24px;
+  font-weight: 800;
 }
 
 .footer__index__p1 {
-    margin-top: 50px;
-    color: #1E1E1E;
-    font-size: 14px;
+  margin-top: 50px;
+  color: #1E1E1E;
+  font-size: 14px;
 }
 
 .footer__index__p2 {
-    margin-top: 80px;
-    font-size: 12px;
-    color: #F7F5F5;
-    border-top: 1px white solid;
-    padding-top: 30px;
-}
-
-@media (min-width:1201px) {
-    .footer__index__p1 {
-        margin-left: 320px;
-        margin-right: 320px;
-    }
+  margin-top: 80px;
+  font-size: 12px;
+  color: #F7F5F5;
+  border-top: 1px white solid;
+  padding-top: 30px;
 }
 
 /* FIN FOOTER */
-
-
 /* COMIENZA QUIÉN SOY */
+.main__quiensoy {
+  margin-top: 330px;
+}
 
-.main__quiensoy,
 .section__quiensoy {
-    margin-top: 120px;
+  margin-top: 120px;
 }
 
 .main__div__h2 {
-    font-weight: 900;
+  font-weight: 900;
+  font-size: 48px;
+  text-align: center;
 }
 
 .section__quiensoy__p {
-    font-size: 3rem;
-    font-weight: 900;
-    padding-right: 20%;
+  font-size: 3rem;
+  font-weight: 900;
+  padding-right: 20%;
 }
 
 .main__quiensoy__video {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .div__main__quiensoy {
-    margin-top: 120px;
+  margin-top: 120px;
 }
 
 .div__quiensoy__h2 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .section__quiensoy__h3 {
-    font-size: 20px;
-    font-weight: 900;
-    margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 20px;
 }
 
 .div__quiensoy__p {
-    font-size: 14px;
-    padding: 20px;
+  font-size: 14px;
+  padding: 20px;
 }
 
 .div__quiensoy__p2 {
-    margin-top: 20px;
-    font-size: 14px;
+  margin-top: 20px;
+  font-size: 14px;
 }
 
 .section__div__quiensoy {
-    margin-top: 80px;
+  margin-top: 80px;
 }
 
 .sectiondiv__button {
-    text-align: center;
-}
-
-@media (max-width:1200px) {
-    .section__div__quiensoy {
-        text-align: center;
-    }
+  text-align: center;
 }
 
 /* FIN QUIÉN SOY */
-
-
 /* PROYECTOS SUB MENÚ*/
-
 .section__estelleythild {
-    margin-top: 120px;
+  margin-top: 120px;
 }
 
-.main__estelleythild__h1 { 
-    font-size: 4rem;
-    font-weight: 800;
+.main__estelleythild__h1 {
+  font-size: 4rem;
+  font-weight: 800;
 }
 
 .main__estelleythild_img1 {
-    width: 15px;
-    height: 15px;
+  width: 15px;
+  height: 15px;
 }
 
 .maindiv__estelleythild {
-    margin-top: 180px;
-    padding-right: 20%;
+  margin-top: 180px;
+  padding-right: 20%;
 }
 
 .main__estelleythild__h2 {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .sectionh2__estelleythild {
-    padding-left: 15%;
-    padding-right: 25%;
-    font-weight: 700;
+  padding-left: 15%;
+  padding-right: 25%;
+  font-weight: 700;
 }
 
 .sectionp__estelleythild {
-    padding-left: 15%;
-    padding-right: 25%;
+  padding-left: 15%;
+  padding-right: 25%;
 }
 
 .main2__estelleythild {
-    margin-top: 120px;
+  margin-top: 120px;
 }
 
 .main2div__estelleythild {
-    margin-top: 180px;
+  margin-top: 180px;
 }
 
 .main2div__estelleythild__h2 {
-    font-size: 3rem;
-    font-weight: 500;
+  font-size: 3rem;
+  font-weight: 500;
 }
 
 .maindiv__conectados {
-    margin-top: 180px;
+  margin-top: 180px;
 }
 
-.img__div__conectados{
-    width: 38px;
-    height: 38px;
+.img__div__conectados {
+  width: 38px;
+  height: 38px;
 }
 
 .div__conectados__p {
-    font-size: 14px;
-    padding-left: 15%;
-    padding-right: 15%;
+  font-size: 14px;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .div__conectados__h2 {
-    color: #5012D5;
-    font-weight: 700;
+  color: #5012D5;
+  font-weight: 700;
 }
 
-.vector__corazon__conectados{
-    width: 14px;
-    height: 12px;
+.vector__corazon__conectados {
+  width: 14px;
+  height: 12px;
 }
 
-.section__conectados__h2{
-    font-size: 3rem;
-    margin-right: 45%;
+.section__conectados__h2 {
+  font-size: 3rem;
+  margin-right: 45%;
 }
 
-.section__conectados__p{
-    font-size: 14px;
+.section__conectados__p {
+  font-size: 14px;
 }
 
-.section__conectados__h3{
-    font-size: 24px;
+.section__conectados__h3 {
+  font-size: 24px;
 }
 
 .img__div__campus {
-    width: 901px;
-    height: 201.68px;
+  width: 901px;
+  height: 201.68px;
 }
 
 .section__campus__p {
-    font-size: 14px;
-    margin-right: 20%;
+  font-size: 14px;
+  margin-right: 20%;
 }
 
-.div__campus__h2{
-    font-size: 18px;
+.div__campus__h2 {
+  font-size: 18px;
 }
 
-.div__campus__p{
-    font-size: 12px;
-    color: #909295;
-    margin-left: 10%;
-    margin-right: 10%;
+.div__campus__p {
+  font-size: 12px;
+  color: #909295;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .maindiv__atomicage {
-    margin-top: 180px;
-    padding-right: 10%;
+  margin-top: 180px;
+  padding-right: 10%;
 }
 
 .maindiv__img__atomicage {
-    width: 236.5px;
-    height: 32px;
+  width: 236.5px;
+  height: 32px;
 }
 
 .main2div__atomicage {
-    margin-top: 80px;
+  margin-top: 80px;
 }
 
 .sectiondiv__img__yudai {
-    position: relative; top: 6%;
+  position: relative;
+  top: 6%;
 }
 
-@media (max-width:600px) {
-    .main__estelleythild__h1 { 
-        font-size: 3rem;
-    } 
-    .main2div__estelleythild__h2 {
-        font-size: 2rem;
-    }
-    .section__conectados__h2 {
-        font-size: 2rem;
-        margin-right: 0%;
-    }
+@media (max-width: 990px) {
+  .header__derecha {
+    position: relative;
+    left: 80px;
+  }
 }
+@media (max-width: 1200px) {
+  .main__img {
+    padding-top: 20px;
+  }
+  .main__index {
+    text-align: center;
+  }
+  .section__div__quiensoy {
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .section__contacto {
+    text-align: center;
+  }
+  .main__estelleythild__h1 {
+    font-size: 3rem;
+  }
+  .main2div__estelleythild__h2 {
+    font-size: 2rem;
+  }
+  .section__conectados__h2 {
+    font-size: 2rem;
+    margin-right: 0%;
+  }
+  .main__index {
+    margin-top: 200px;
+  }
+}
+@media (min-width: 601px) and (max-width: 1200px) {
+  .section__contacto {
+    text-align: center;
+  }
+}
+@media (min-width: 1201px) {
+  .footer__index__p1 {
+    margin-left: 320px;
+    margin-right: 320px;
+  }
+  .main__carismatica {
+    position: relative;
+    right: 20px;
+  }
+}
+/* MIXIN */
+.button__mixin {
+  border: 1px #F9BE15 solid;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1E1E1E;
+  text-decoration: none;
+  background-color: #F7F5F5;
+  border-radius: 0%;
+}
+.button__mixin:hover {
+  background-color: #F9BE15;
+  color: #F7F5F5;
+}
+
+/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,39 @@
+/* COMIENZA CONTACTO */
+
+.section__contacto {
+    margin-top: 120px;
+}
+
+.section__contacto__h2 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.section__contacto__p {
+    color: $color_4;
+    font-size: 14px;
+}
+
+.div__contacto__h3 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.section__form {
+    background: #F7F5F5;
+    border: 1px #373F41 solid;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 0%;
+}
+
+.section__div__logo {
+    width: 24px;
+    height: 24px;
+}
+
+textarea {
+    max-width: 100%;
+}
+
+/* FIN CONTACTO */

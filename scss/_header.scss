@@ -1,0 +1,96 @@
+/* ENCABEZADO */
+
+.header__logo {
+    width: 103px;
+    height: 70px;
+    cursor: pointer;
+    position: relative;
+    right: 10px;
+}
+
+.header__menu {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color_1;
+    font-weight: 800;
+    list-style-type: none;
+    font-size: 14px;
+    padding: 0px 20px;
+    position: relative;
+    left: 20px;
+}
+
+li {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color_1;
+    font-weight: 800;
+    list-style-type: none;
+    font-size: 14px;
+    padding: 0px 20px;
+    position: relative;
+    left: 20px;
+}
+
+.header__conoceme {
+    border-bottom: 3px #1E1E1E solid;
+}
+
+.header__contacto {
+    border-bottom: 3px #1E1E1E solid;
+}
+
+.header__proyectos {
+    border-bottom: 3px #1E1E1E solid;
+}
+
+.header__valores {
+    border-bottom: 3px #1E1E1E solid;
+}
+
+.header__logoinstagram {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    bottom: 3px;
+}
+
+.header__button {
+    color: $color_1;
+    background-color: $background-color_1;
+    border: none;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 20px;
+
+    &:hover {
+        color: $color_2;
+    }
+}
+
+.dropdown-menu {
+    background-color: $background-color_1;
+    border: none;
+}
+
+.dropdown-item {
+    font-size: 14px;
+    color: $color_3;
+    font-weight: 500;
+    position: relative;
+    right: 20%;
+
+    &:hover {
+        background-color: $background-color_2;
+        color: $color_5;
+    }
+}
+
+.fixed-top {
+    top: 0px;
+    background-color: $background-color_1;
+}
+
+/*box-shadow: 0px 0px 5px  #B6A99C;
+
+/* FIN DE ENCABEZADO */

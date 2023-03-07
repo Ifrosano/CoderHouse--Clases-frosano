@@ -1,0 +1,59 @@
+@media (max-width:990px) {
+    .header__derecha {
+        position: relative;
+        left: 80px;
+    }
+}
+
+@media (max-width:1200px) {
+    .main__img {
+        padding-top: 20px;
+    }
+
+    .main__index {
+        text-align: center;
+    }
+
+    .section__div__quiensoy {
+        text-align: center;
+    }
+}
+
+@media (max-width:600px) {
+    .section__contacto {
+        text-align: center;
+    }
+
+    .main__estelleythild__h1 {
+        font-size: 3rem;
+    }
+
+    .main2div__estelleythild__h2 {
+        font-size: 2rem;
+    }
+
+    .section__conectados__h2 {
+        font-size: 2rem;
+        margin-right: 0%;
+    }
+
+    .main__index {
+        margin-top: 200px;
+    }
+}
+
+@media (min-width:601px) and (max-width:1200px) {
+    .section__contacto {
+        text-align: center;
+    }
+}
+
+@media (min-width:1201px) {
+    .footer__index__p1 {
+        margin-left: 320px;
+        margin-right: 320px;
+    }
+    .main__carismatica {
+        position: relative; right: 20px;
+    }
+}
