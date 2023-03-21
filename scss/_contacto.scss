@@ -36,4 +36,14 @@ textarea {
     max-width: 100%;
 }
 
+.section__form {
+    background-color: $background-color_1;
+
+    &:focus {
+        border: solid $color_7 3px;
+        background-color: $background-color_1;
+        box-shadow: none;
+    }
+}
+
 /* FIN CONTACTO */

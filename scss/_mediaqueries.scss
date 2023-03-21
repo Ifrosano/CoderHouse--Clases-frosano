@@ -55,5 +55,14 @@
     }
     .main__carismatica {
         position: relative; right: 20px;
+    } 
+}
+
+@media (min-width: 576px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    .main__estelleythild_img2 {
+        margin-top: 90px;
     }
 }

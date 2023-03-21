@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bienvenido a mi portfolio online. Soy Florencia Rosano, Diseñadora Gráfica, UX UI & Desarrolladora web. Vení a conocer sobre mi">
+    <meta name="description"
+        content="Bienvenido a mi portfolio online. Soy Florencia Rosano, Diseñadora Gráfica, UX UI & Desarrolladora web. Vení a conocer sobre mi">
+    <link rel="icon" type="image/png" href="../img/favicon-96x96--2.png" />
     <title>Ros Design</title>
     <!-- Animación -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -21,8 +23,8 @@
 
     <!-- COMIENZA ENCABEZADO -->
 
-    <header class="header container animate__animated animate__fadeInDown">
-        <nav class="header__nav navbar navbar-expand-lg">
+    <header class="header animate__animated animate__fadeInDown fixed-top">
+        <nav class="header__nav navbar navbar-expand-lg container">
             <div class="container-fluid">
                 <a href="../index.html"><img class="header__logo" src="../img/logo porfolio.png"
                         alt="Logo porfolio Florencia"> </a>
@@ -32,13 +34,15 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="mx-auto header__menu navbar-nav">
-                        <li class="nav-item">
-                            <a class="header__conoceme nav-link active" aria-current="page"
-                                href="/index.html">Conoceme</a>
+                        <li class="nav-item dropdown">
+                            <a class="header__conoceme nav-link active" role="button" aria-expanded="false"
+                                href="../index.html">Conoceme</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="quiensoy.html">¿Quién soy?</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#Sec-proyectos" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false"> PROYECTOS
+                            <a class="nav-link" href="../index.html" role="button" aria-expanded="false"> PROYECTOS
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="conectados.html">Conectados</a></li>
@@ -58,8 +62,9 @@
                         </li>
                     </ul>
                     <div class="header__derecha ms-auto">
-                        <img class="header__logoinstagram img-fluid" src="../img/logo instagram.png"
-                            alt="Logo de instagram">
+                        <a target="_blank" href="https://www.instagram.com/_frosano/"><img
+                                class="header__logoinstagram img-fluid" src="../img/logo instagram.png"
+                                alt="Logo de instagram"></a>
                         <button class="header__button">ES</button>
                     </div>
                 </div>
@@ -74,7 +79,7 @@
     <main class="main__quiensoy container">
         <div class="main__div__quiensoy row text-center animate__animated animate__fadeInUp">
             <div class="col-xl-4">
-                <h2 class="main__div__h2">DEDICADA.</h>
+                <h1 class="main__div__h2">DEDICADA.</h1>
             </div>
             <div class="col-xl-4">
                 <h2 class="main__div__h2 main__carismatica">CARISMÁTICA.</h2>
@@ -83,7 +88,8 @@
                 <h2 class="main__div__h2">APASIONADA.</h2>
             </div>
         </div>
-        <img class="main__quiensoy__video img-fluid" src="../img/videoconoceme.png" alt="Primera imagen quién soy, saludo Hola"></img>
+        <img class="main__quiensoy__video img-fluid" src="../img/gif-hola-conoceme.gif"
+            alt="Primera imagen quién soy, saludo Hola"></img>
     </main>
 
     <!-- FIN CONOCEME 1 -->
@@ -114,13 +120,13 @@
                     Me encanta aprender & actualizarme cada día.
                 </p>
                 <p class="div__quiensoy__p2">
-                    Soy licenciada de la carrera Diseño Gráfico, me interesa por sobre todo el diseño web es por esto
+                    Soy <strong>licenciada de la carrera Diseño Gráfico,</strong> me interesa por sobre todo el diseño web es por esto
                     que me especialicé en el diseño pensado en el usuario & actualmente me encuentro estudiando
                     desarrollo web.
                 </p>
             </div>
         </div>
-        <div data-aos="fade-up"data-aos-anchor-placement="top-bottom" class="div__main__quiensoy row ">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="div__main__quiensoy row ">
             <div class="col-xl-4 text-center">
                 <img class="img-fluid div__img__conoceme mb-4" src="../img/conoceme_div1.png"
                     alt="Imagen encima de Diseño Gráfico">
@@ -147,7 +153,9 @@
             </div>
         </div>
         <div class="sectiondiv__button">
-            <button class="button__mixin">DESCARGAR CURRICULUM VITAE</button>
+            <a class="button__mixin" href="../img/cv--rosanoflorencia.pdf" download="CV Rosano Florencia"
+                title="Descargar Curriculum Vitae">
+                DESCARGAR CURRICULUM VITAE</a>
         </div>
     </section>
 
@@ -167,7 +175,9 @@
                         src="../img/mail_contacto.png" alt="logo mail contacto">florenciarosano97@gmail.com</h4>
             </div>
             <div class="col-xl-3">
-                <img class="footer__logoinstagram img-fluid" src="../img/logo instagram.png" alt="Logo de instagram">
+                <a target="_blank" href="https://www.instagram.com/_frosano/"><img
+                        class="footer__logoinstagram img-fluid" src="../img/logo instagram.png"
+                        alt="Logo de instagram"></a>
                 <button class="footer__button mb-5">ES</button>
             </div>
         </div>
@@ -184,7 +194,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"

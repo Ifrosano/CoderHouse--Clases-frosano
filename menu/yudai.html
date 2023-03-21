@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bienvenido a mi portfolio online. Soy Florencia Rosano, Diseñadora Gráfica, UX UI & Desarrolladora web. Conocé mi trabajo, Yudai">
+    <meta name="description"
+        content="Bienvenido a mi portfolio online. Soy Florencia Rosano, Diseñadora Gráfica, UX UI & Desarrolladora web. Conocé mi trabajo, Yudai">
+    <link rel="icon" type="image/png" href="../img/favicon-96x96--2.png" />
     <title>Ros Design</title>
     <!-- Animación -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -13,6 +15,7 @@
     <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
@@ -20,8 +23,8 @@
 
     <!-- COMIENZA ENCABEZADO -->
 
-    <header class="header container animate__animated animate__fadeInDown">
-        <nav class="header__nav navbar navbar-expand-lg">
+    <header class="header animate__animated animate__fadeInDown fixed-top">
+        <nav class="header__nav navbar navbar-expand-lg container">
             <div class="container-fluid">
                 <a href="../index.html"><img class="header__logo" src="../img/logo porfolio.png"
                         alt="Logo porfolio Florencia"> </a>
@@ -31,11 +34,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="mx-auto header__menu navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../index.html">Conoceme</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" role="button" aria-expanded="false" href="../index.html">Conoceme</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="quiensoy.html">¿Quién soy?</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link active header__proyectos" href="#Sec-proyectos" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link active header__proyectos" href="../index.html" role="button"
                                 aria-expanded="false"> PROYECTOS
                             </a>
                             <ul class="dropdown-menu">
@@ -56,8 +62,9 @@
                         </li>
                     </ul>
                     <div class="header__derecha ms-auto">
-                        <img class="header__logoinstagram img-fluid" src="../img/logo instagram.png"
-                            alt="Logo de instagram">
+                        <a target="_blank" href="https://www.instagram.com/_frosano/"><img
+                                class="header__logoinstagram img-fluid" src="../img/logo instagram.png"
+                                alt="Logo de instagram"></a>
                         <button class="header__button">ES</button>
                     </div>
                 </div>
@@ -70,26 +77,51 @@
     <main class="main__estelleythild container">
         <div class="row">
             <div class="col-xl-6 maindiv__atomicage animate__animated animate__fadeInDown">
-                <h1 class="main__estelleythild__h1 mb-5"> Yudai <img class="img-fluid main__estelleythild_img1"
-                        src="../img/rectanguloyudai.png" alt="Rectangulo punto al finalizar oración"></h1>
-                <h2 class="main__estelleythild__h2 mb-5">2021. Aplicación. Diseño interacción avanzado.</h2>
+                <div class="mb-5">
+                    <h1 class="main__estelleythild__h1" style="display: inline;">Yudai</h1>
+                    <img class="img-fluid main__estelleythild_img1 mb-3" src="../img/rectanguloyudai.png"
+                        alt="Rectangulo punto al finalizar oración">
+                </div>
+                <h2 class="main__estelleythild__h2 mb-5"><strong>2021.</strong> Aplicación. Diseño interacción avanzado.</h2>
             </div>
             <div class="col-xl-6 animate__animated animate__fadeInUp">
-                <img class="img-fluid mb-4 main__estelleythild_img2" src="../img/yudai1.png"
-                    alt="Primera imagen Yudai">
-                <img class="img-fluid main__estelleythild_img2" src="../img/yudai2.png"
-                    alt="Segunda imagen Yudai">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="img-fluid mb-5 main__estelleythild_img2" src="../img/yudai1.png"
+                                alt="Primera imagen Yudai">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid mb-5 main__estelleythild_img2" src="../img/yudai2.png"
+                                alt="Segunda imagen Yudai">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
         </div>
     </main>
 
     <section data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="section__estelleythild">
-        <h2 class="container mb-5 sectionh2__estelleythild">¿Dejaron de conocer nuevas culturas por miedo a perderse?</h2>
+        <h2 class="container mb-5 sectionh2__estelleythild">¿Dejaron de conocer nuevas culturas por miedo a perderse?
+        </h2>
         <p class="container sectionp__estelleythild">
-            Creemos en los contenidos públicos inspiradores, inclusivos y universales, que nos inviten a repensar los límites y derribar prejuicios.
+            Yudai es un videojuego de <strong> gastronomía en Tokio</strong> dónde podes ser tu propia guía y tomar tus propias decisiones,
+            llevando a cabo el saber y el gusto para aumentar tus habilidades culinarias, en un entorno real mezclado
+            con la realidad aumentada.
         </p>
         <p class="container mb-5 sectionp__estelleythild">
-            Creemos en las buenas prácticas ciudadanas, en motivar lo mejor de cada uno para mejorar la convivencia entre todos.</p>
+            El objetivo del juego es que el usuario gane conocimiento cultural de la comida típica de la ciudad de Tokio
+        </p>
         <img class="img-fluid mb-5" src="../img/yudai3.png" alt="Imagen división Yudai">
     </section>
 
@@ -106,18 +138,18 @@
         <img class="img-fluid" src="../img/yudai4.png" alt="Imagen abajo Yudai">
     </section>
 
-    <main class="container main2__estelleythild">
+    <section class="container main2__estelleythild">
         <div class="row">
             <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="col-xl-6">
-                <img class="img-fluid mb-4" src="../img/yudai7.png"
-                    alt="Imagen con paleta cromática Yudai">
+                <img class="img-fluid mb-4" src="../img/yudai7.png" alt="Imagen con paleta cromática Yudai">
                 <img class="img-fluid" src="../img/yudai8.png" alt="Imagen con tipografía Yudai">
             </div>
             <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="col-xl-6 main2div__atomicage">
                 <h2 class="main2div__estelleythild__h2 mb-5">Paleta cromática y
                     tipografías.</h2>
                 <p class="main2div__estelleythild__p">
-                    Para la elección de la paleta utilizamos una estética  gráfica basada en los dibujos animados en tonos brillantes o pasteles. 
+                    Para la elección de la paleta utilizamos una estética gráfica basada en los dibujos animados en
+                    tonos <strong>brillantes o pasteles.</strong>
                     La elección se dio por ser una gráfica visualmente fácil de identificar y que llame la atención.
                 </p>
                 <p class="main2div__estelleythild__p">
@@ -125,22 +157,20 @@
                 </p>
             </div>
         </div>
-    </main>
+    </section>
 
     <section class="container section__estelleythild">
         <h2 class="mb-5 section__conectados__h2">Una mirada a la aplicación.</h2>
-        <img class="img-fluid mb-5" src="../img/yudai9.png" alt="Imagen debajo división Yudai">
         <div class="row">
             <div class="col-xl-6">
-                <img class="img-fluid mb-2" src="../img/yudai11.png"
-                    alt="Última imagen izquierda Yudai">
+                <img class="img-fluid mb-2" src="../img/yudai11.png" alt="Última imagen izquierda Yudai">
             </div>
             <div class="col-xl-6">
-                <img class="img-fluid sectiondiv__img__yudai" src="../img/yudai10.png" alt="Última imagen derecha Yudai">
+                <img class="img-fluid sectiondiv__img__yudai" src="../img/yudai10.png"
+                    alt="Última imagen derecha Yudai">
             </div>
         </div>
     </section>
-
 
     <!-- COMIENZA PIE DE PÁGINA -->
 
@@ -158,16 +188,18 @@
                         src="../img/mail_contacto.png" alt="logo mail contacto">florenciarosano97@gmail.com</h4>
             </div>
             <div class="col-xl-3">
-                <img class="footer__logoinstagram img-fluid" src="../img/logo instagram.png" alt="Logo de instagram">
+                <a target="_blank" href="https://www.instagram.com/_frosano/"><img
+                        class="footer__logoinstagram img-fluid" src="../img/logo instagram.png"
+                        alt="Logo de instagram"></a>
                 <button class="footer__button mb-5">ES</button>
             </div>
         </div>
         <div class="container">
             <footer class="py-3 my-4">
-              <ul class="nav justify-content-center border-bottom pb-3 mb-3"></ul>
-              <p class="text-center text-muted">© 2023 FR | Todos los derechos resevados</p>
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3"></ul>
+                <p class="text-center text-muted">© 2023 FR | Todos los derechos resevados</p>
             </footer>
-          </div>
+        </div>
     </footer>
 
     <!-- FIN PIE DE PÁGINA -->

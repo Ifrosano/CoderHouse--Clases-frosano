@@ -9,6 +9,15 @@
     font-weight: 800;
 }
 
+.btn-primary {
+
+    &:hover {
+        border: none;
+    }
+    &:active {
+        background-color: $background-color_2;
+    }
+}
 
 
 /* FIN PROYECTOS */

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Bienvenido a mi portfolio online. Soy Florencia Rosano, Diseñadora Gráfica, UX UI & Desarrolladora web. Conocé mi trabajo, Conectados">
+    <link rel="icon" type="image/png" href="../img/favicon-96x96--2.png" />
     <title>Ros Design</title>
     <!-- Animación -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -22,8 +23,8 @@
 
     <!-- COMIENZA ENCABEZADO -->
 
-    <header class="header container animate__animated animate__fadeInDown">
-        <nav class="header__nav navbar navbar-expand-lg">
+    <header class="header animate__animated animate__fadeInDown fixed-top">
+        <nav class="header__nav navbar navbar-expand-lg container">
             <div class="container-fluid">
                 <a href="../index.html"><img class="header__logo" src="../img/logo porfolio.png"
                         alt="Logo porfolio Florencia"> </a>
@@ -33,12 +34,15 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="mx-auto header__menu navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../index.html">Conoceme</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" role="button" aria-expanded="false" href="../index.html">Conoceme</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="quiensoy.html">¿Quién soy?</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link active header__proyectos" href="#Sec-proyectos" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false"> PROYECTOS
+                            <a class="nav-link active header__proyectos" href="../index.html" role="button"
+                                aria-expanded="false"> PROYECTOS
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="conectados.html">Conectados</a></li>
@@ -58,8 +62,9 @@
                         </li>
                     </ul>
                     <div class="header__derecha ms-auto">
-                        <img class="header__logoinstagram img-fluid" src="../img/logo instagram.png"
-                            alt="Logo de instagram">
+                        <a target="_blank" href="https://www.instagram.com/_frosano/"><img
+                                class="header__logoinstagram img-fluid" src="../img/logo instagram.png"
+                                alt="Logo de instagram"></a>
                         <a href=></a><button class="header__button">ES</button>
                     </div>
                 </div>
@@ -72,16 +77,36 @@
     <main class="main__estelleythild container">
         <div class="row">
             <div class="col-xl-6 maindiv__conectados animate__animated animate__fadeInDown">
-                <h1 class="main__estelleythild__h1 mb-5"> Argentinos conectados <img
-                        class="img-fluid main__estelleythild_img1" src="../img/rectanguloconectados.png"
-                        alt="Rectangulo punto al finalizar oración"></h1>
-                <h2 class="main__estelleythild__h2 mb-5">2021. Aplicación, interacción, UX UI.</h2>
+                <div class="mb-5">
+                    <h1 class="main__estelleythild__h1" style="display: inline;"> Argentinos conectados</h1>
+                    <img class="img-fluid main__estelleythild_img1 mb-3" src="../img/rectanguloconectados.png"
+                        alt="Rectangulo punto al finalizar oración">
+                </div>
+                <h2 class="main__estelleythild__h2 mb-5"> <strong>2021.</strong> Aplicación, interacción, UX UI.</h2>
             </div>
             <div class="col-xl-6 animate__animated animate__fadeInUp">
-                <img class="img-fluid mb-4 main__estelleythild_img2" src="../img/conectados4.png"
-                    alt="Primera imagen conectados">
-                <img class="img-fluid main__estelleythild_img2" src="../img/conectados1.png"
-                    alt="Segunda imagen conectados">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="img-fluid mb-5 main__estelleythild_img2" src="../img/conectados4.png"
+                                alt="Primera imagen conectados">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid mb-5 main__estelleythild_img2" src="../img/conectados1.png"
+                                alt="Segunda imagen conectados">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
         </div>
     </main>
@@ -91,11 +116,11 @@
             en el mundo.</h2>
         <p class="container sectionp__estelleythild">
             La aplicación se centra en brindar asistencia a todos aquellos jóvenes argentinos que desean o están por
-            emigrar los cuales necesitan información y compañía.
+            emigrar los cuales necesitan <strong>información y compañía.</strong>
         </p>
         <p class="container sectionp__estelleythild">
-            Nuestra solución es ofrecerles a todos aquellos argentinos que quieren emigrar y los que ya emigraron una
-            comunidad para sentirse más acompañados, además de información útil que los ayudara en su viaje.
+            Nuestra solución es ofrecerles a todos aquellos argentinos que quieren emigrar y los que ya emigraron una <strong>comunidad para sentirse más acompañados,</strong>
+            además de <strong>información útil que los ayudara en su viaje.</strong>
         </p>
         <img class="img-fluid mb-5" src="../img/conectados2.png" alt="Imagen división Conectados">
     </section>
@@ -136,7 +161,7 @@
         <img class="img-fluid" src="../img/conectados10.png" alt="Imagen abajo celular conectados">
     </section>
 
-    <main class="container main2__estelleythild">
+    <section class="container main2__estelleythild">
         <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="row">
             <div class="col-xl-6">
                 <img class="img-fluid mb-4" src="../img/conectados3.png" alt="Imagen con paleta cromática Conectados">
@@ -150,12 +175,11 @@
                     a la hora de emprender su nuevo camino de vida.
                 </p>
                 <p class="main2div__estelleythild__p">
-                    En cuanto a la tipografía se propone utilizar una san serif de fácil lectura. Se eligió SF pro
-                    display por ser la tipografía madre de ios y la tipografía Poppins para el logo de la aplicación.
+                    En cuanto a la tipografía se propone utilizar una san serif de fácil lectura. Se eligió <strong>SF pro display</strong> por ser la tipografía madre de ios y la tipografía <strong>Poppins</strong> para el logo de la aplicación.
                 </p>
             </div>
         </div>
-    </main>
+    </section>
 
     <section class="container section__estelleythild">
         <h2 class="mb-5 section__conectados__h2">Funcionalidades de la aplicación.</h2>
@@ -191,7 +215,9 @@
             </div>
         </div>
         <div class="sectiondiv__button">
-            <button class="button__mixin">VER PROYECTO COMPLETO</button>
+            <a target="_blank" class="button__mixin"
+                href="https://www.figma.com/proto/2W4HWGoYlcsLub8mYKbgJ5/argentinos-conectados-team-library?node-id=497-17964&scaling=scale-down-width&page-id=408%3A7803&starting-point-node-id=497%3A17964">VER
+                PROYECTO COMPLETO</a>
         </div>
     </section>
 
@@ -212,7 +238,9 @@
                         src="../img/mail_contacto.png" alt="logo mail contacto">florenciarosano97@gmail.com</h4>
             </div>
             <div class="col-xl-3">
-                <img class="footer__logoinstagram img-fluid" src="../img/logo instagram.png" alt="Logo de instagram">
+                <a target="_blank" href="https://www.instagram.com/_frosano/"><img
+                        class="footer__logoinstagram img-fluid" src="../img/logo instagram.png"
+                        alt="Logo de instagram"></a>
                 <button class="footer__button mb-5">ES</button>
             </div>
         </div>

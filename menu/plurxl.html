@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bienvenido a mi portfolio online. Soy Florencia Rosano, Diseñadora Gráfica, UX UI & Desarrolladora web. Conocé mi Suplemento Plurxl para el CCK">
+    <meta name="description"
+        content="Bienvenido a mi portfolio online. Soy Florencia Rosano, Diseñadora Gráfica, UX UI & Desarrolladora web. Conocé mi Suplemento editorial para el CCK">
+    <link rel="icon" type="image/png" href="../img/favicon-96x96--2.png" />
     <title>Ros Design</title>
     <!-- Animación -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -13,6 +15,7 @@
     <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
@@ -20,8 +23,8 @@
 
     <!-- COMIENZA ENCABEZADO -->
 
-    <header class="header container animate__animated animate__fadeInDown">
-        <nav class="header__nav navbar navbar-expand-lg">
+    <header class="header animate__animated animate__fadeInDown fixed-top">
+        <nav class="header__nav navbar navbar-expand-lg container">
             <div class="container-fluid">
                 <a href="../index.html"><img class="header__logo" src="../img/logo porfolio.png"
                         alt="Logo porfolio Florencia"> </a>
@@ -31,11 +34,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="mx-auto header__menu navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../index.html">Conoceme</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" role="button" aria-expanded="false" href="../index.html">Conoceme</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="quiensoy.html">¿Quién soy?</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link active header__proyectos" href="#Sec-proyectos" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link active header__proyectos" href="../index.html" role="button"
                                 aria-expanded="false"> PROYECTOS
                             </a>
                             <ul class="dropdown-menu">
@@ -56,8 +62,9 @@
                         </li>
                     </ul>
                     <div class="header__derecha ms-auto">
-                        <img class="header__logoinstagram img-fluid" src="../img/logo instagram.png"
-                            alt="Logo de instagram">
+                        <a target="_blank" href="https://www.instagram.com/_frosano/"><img
+                                class="header__logoinstagram img-fluid" src="../img/logo instagram.png"
+                                alt="Logo de instagram"></a>
                         <button class="header__button">ES</button>
                     </div>
                 </div>
@@ -70,14 +77,36 @@
     <main class="main__estelleythild container">
         <div class="row">
             <div class="col-xl-6 maindiv__estelleythild animate__animated animate__fadeInDown">
-                <h1 class="main__estelleythild__h1 mb-5"> Plurxl <img
-                        class="img-fluid main__estelleythild_img1" src="../img/rectanguloestelle_thild.png"
-                        alt="Rectangulo punto al finalizar oración"></h1>
-                <h2 class="main__estelleythild__h2 mb-5">2020. Suplemento, editorial, colagge.</h2>
+                <div class="mb-5">
+                    <h1 class="main__estelleythild__h1" style="display: inline;"> Plurxl</h1>
+                    <img class="img-fluid main__estelleythild_img1 mb-3" src="../img/rectanguloestelle_thild.png"
+                        alt="Rectangulo punto al finalizar oración">
+                </div>
+                <h2 class="main__estelleythild__h2 mb-5"><strong>2020.</strong> Suplemento, editorial, colagge.</h2>
             </div>
             <div class="col-xl-6 animate__animated animate__fadeInUp">
-                <img class="img-fluid mb-4 main__estelleythild_img2" src="../img/plurxlimagen1.png" alt="Primera imagen Plural">
-                <img class="img-fluid main__estelleythild_img2" src="../img/plurxlimagen2.png" alt="Segunda imagen Plural">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="img-fluid mb-5 main__estelleythild_img2" src="../img/plurxlimagen1.png"
+                                alt="Primera imagen Plural">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid mb-5 main__estelleythild_img2" src="../img/plurxlimagen2.png"
+                                alt="Segunda imagen Plural">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
         </div>
     </main>
@@ -86,11 +115,12 @@
         <h2 class="container mb-5 sectionh2__estelleythild">Promover inclusión
             mediante arte.</h2>
         <p class="container sectionp__estelleythild">
-            Plurxl es un suplemento de difusión gratuita pensado para el CCK (Centro cultural Kirchner) con el objetivo de promover la inclusión mediante el arte y la cultura.
+            Plurxl es un <strong>suplemento de difusión</strong> gratuita pensado para el CCK (Centro cultural Kirchner) con el objetivo
+            de promover la inclusión mediante el arte y la cultura.
         </p>
         <p class="container mb-5 sectionp__estelleythild">
-            “Creemos en los contenidos públicos inspiradores, inclusivos y universales, que nos inviten a repensar los límites y derribar prejuicios”.</p>
-        <img class="img-fluid mb-5" src="../img/divisionplural.png" alt="Imagen división Plural">
+            “Creemos en los contenidos públicos inspiradores, inclusivos y universales, que nos inviten a repensar los
+            límites y derribar prejuicios”.</p>
     </section>
 
     <section class="container">
@@ -106,7 +136,7 @@
         <img class="img-fluid" src="../img/plural4.png" alt="Imagen abajo revista plural">
     </section>
 
-    <main class="container main2__estelleythild">
+    <section class="container main2__estelleythild">
         <div class="row">
             <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="col-xl-6">
                 <img class="img-fluid mb-4" src="../img/plural6.png" alt="Imagen con paleta cromática Plural">
@@ -116,14 +146,16 @@
                 <h2 class="main2div__estelleythild__h2 mb-5">Paleta cromática y
                     tipografías.</h2>
                 <p class="main2div__estelleythild__p">
-                    Para la paleta utilizamos colores que sean diferentes entre sí pero que juntos mantengan un equilibrio visual y de esta manera representar la inclusión social.
+                    Para la paleta utilizamos colores que sean diferentes entre sí pero que juntos mantengan un
+                    equilibrio visual y de esta manera representar la inclusión social.
                 </p>
                 <p class="main2div__estelleythild__p">
-                    Para la tipografía decidimos utilizar una Serif para la mancha de texto y una San Serif para títulos y logo del suplemento. 
+                    Para la tipografía decidimos utilizar una <strong>Serif para la mancha de texto</strong> y una <strong>San Serif para títulos
+                        y logo del suplemento.</strong>
                 </p>
             </div>
         </div>
-    </main>
+    </section>
 
     <section class="container section__estelleythild">
         <div class="row">
@@ -161,16 +193,18 @@
                         src="../img/mail_contacto.png" alt="logo mail contacto">florenciarosano97@gmail.com</h4>
             </div>
             <div class="col-xl-3">
-                <img class="footer__logoinstagram img-fluid" src="../img/logo instagram.png" alt="Logo de instagram">
+                <a target="_blank" href="https://www.instagram.com/_frosano/"><img
+                        class="footer__logoinstagram img-fluid" src="../img/logo instagram.png"
+                        alt="Logo de instagram"></a>
                 <button class="footer__button mb-5">ES</button>
             </div>
         </div>
         <div class="container">
             <footer class="py-3 my-4">
-              <ul class="nav justify-content-center border-bottom pb-3 mb-3"></ul>
-              <p class="text-center text-muted">© 2023 FR | Todos los derechos resevados</p>
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3"></ul>
+                <p class="text-center text-muted">© 2023 FR | Todos los derechos resevados</p>
             </footer>
-          </div>
+        </div>
     </footer>
 
     <!-- FIN PIE DE PÁGINA -->
